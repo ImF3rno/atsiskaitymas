@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kelionesUzklausa</title>
+</head>
+<style>
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline;
+}
+</style>
+<body>
+    <header>
+        <p>
+            <ul>
+                <li><a href="index.html">
+                    <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000" alt="logo" width="100px" height="90px">
+                </a></li>
+                <li style="float:right"><a href="Login.html">Login</a></li>
+            </ul>
+        </p>
+    </header>
+    <h1 style="text-align:center;">Keliones Uzklausos forma</h1>
+    <form>
+        <div>
+            <label id="name">Vardas:</label>
+            <input type="text" id="name" name="name" pattern="[A-Z][a-z]*" required>
+        </div>
+        <div>
+            <label id="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label id="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="+370[0-9]" maxlength="12" required>
+        </div>
+        <fieldset>
+            <div>
+                <label for="country">Select country:</label>
+                <select name="country" id="country">
+                    <option label="Lithuania" value="Lithuania"></option>
+                    <option label="Spain" value="Spain"></option>
+                    <option label="Germany" value="Germany"></option>
+                </select>
+            </div>
+            <div>
+                <label for="city">Select city:</label>
+                <select name="city" id="city">
+                    <option label="Kaunas" value="Kaunas"></option>
+                    <option label="Utena" value="Utena"></option>
+                    <option label="Vilnius" value="Vilnius"></option>
+                </select>
+            </div>
+            <div>
+                <label for="streat">Select streat:</label>
+                <select name="streat" id="streat">
+                    <option label="Azuolo" value="Azuolo"></option>
+                    <option label="Vokieciu" value="Vokieciu"></option>
+                    <option label="Maironio" value="Maironio"></option>
+                </select>
+            </div>
+        </fieldset required>
+        <div>
+            <label for="date"></label>
+                Choose your preferred date:
+                <input type="date" name="date" min="TODAY()" required>
+        </div>
+        <div>
+            <label for="select">Additional:</label>
+            <input type="checkbox" id="select" name="select">
+            Car
+            <input type="checkbox" id="select" name="select">
+            Hotel
+            <input type="checkbox" id="select" name="select">
+            Pool
+            <input type="checkbox" id="select" name="select">
+            Market
+            <input type="checkbox" id="select" name="select">
+            Beach
+        </div>
+        <div>
+            <label id="traveling">How many traveling:</label>
+            <input type="radio" id="traveling" name="traveling">
+            1
+            <input type="radio" id="traveling" name="traveling">
+            2
+            <input type="radio" id="traveling" name="traveling">
+            3
+            <input type="radio" id="traveling" name="traveling">
+            More
+        </div>
+        <div>
+            <label for="komentarai">Additional:</label>
+            <textarea class="textas" id="komentarai" name="komentarai" cols="50" rows="10"></textarea>
+        </div>
+    </form>
+    <a href="index.html">
+        <button type="submit">Submit</button>
+    </a>
+    <h2>For more information you can visit:</h2>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9177.208074948223!2d23.91766957777099!3d54.89762109009927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1695293698875!5m2!1slt!2slt" width="250" height="200" style="border: 0; "allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <address>
+            Susitinkam (adresas).<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            LT
+            </address>
+        <p style="text-align:center">&copy; Negalima kopijuoti sito puslapio</p>
+    </footer>
+</body>
+</html>
